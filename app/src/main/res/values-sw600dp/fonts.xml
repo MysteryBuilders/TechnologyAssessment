@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-<dimen name="fontSizeTiny">14sp</dimen>
+<resources xmlns:tools="http://schemas.android.com/tools">
+<dimen name="fontSizeTiny" tools:keep="@dimen/fontSizeTiny">14sp</dimen>
     <dimen name="fontSizeSmall">21sp</dimen>
-    <dimen name="fontSizeMedium">27sp</dimen>
-    <dimen name="fontSizeLarge">33sp</dimen>
-    <dimen name="fontSizeXLarge">39sp</dimen>
-    <dimen name="fontSizeHuge">48sp</dimen>
+    <dimen name="fontSizeMedium" tools:keep="@dimen/fontSizeMedium">27sp</dimen>
+    <dimen name="fontSizeLarge" tools:keep="@dimen/fontSizeLarge">33sp</dimen>
+    <dimen name="fontSizeXLarge" tools:keep="@dimen/fontSizeXLarge">39sp</dimen>
+    <dimen name="fontSizeHuge" tools:keep="@dimen/fontSizeHuge">48sp</dimen>
 
 </resources>

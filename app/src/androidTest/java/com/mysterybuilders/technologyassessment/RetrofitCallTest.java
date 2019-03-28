@@ -14,6 +14,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.test.espresso.Espresso;
 import androidx.test.espresso.action.ViewActions;
 import androidx.test.espresso.assertion.ViewAssertions;
@@ -49,6 +50,7 @@ public class RetrofitCallTest extends InstrumentationTestCase {
         server.enqueue(new MockResponse()
                 .setResponseCode(200)
                 .setBody(RestServiceTestHelper.getStringFromFile(getInstrumentation().getContext(), fileName)));
+        RecyclerView mRecyclerView = mActivityRule.getActivity().findViewById(R.id.recycler_view_employee_list);
 
         Intent intent = new Intent();
         mActivityRule.launchActivity(intent);
