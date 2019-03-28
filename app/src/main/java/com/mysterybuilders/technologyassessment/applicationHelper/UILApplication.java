@@ -52,9 +52,5 @@ public class UILApplication extends Application {
 		ImageLoader.getInstance().init(config);
 
 	}
-	@Override
-	protected void attachBaseContext(Context base) {
-		super.attachBaseContext(base);
-		MultiDex.install(this);
-	}
+
 }
